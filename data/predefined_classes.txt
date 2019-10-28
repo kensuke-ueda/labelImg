@@ -1,18 +1,8 @@
-mixed
-blackbird
-blue tit
-cat
-collared dove
-dunnock
-goldfinch
-great tit
-jackdaw
-long tailed tit
-mouse
-robin
-sparrow
-sparrowhawk
-squirrel
-starling
-wood pigeon
-unclassified
+Adenocarcinoma
+ASC-US
+ASC-H
+LSIL
+HSIL
+AGC
+SCC
+

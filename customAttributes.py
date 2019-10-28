@@ -501,63 +501,26 @@ class AttributesManager( AbstractAttributesWidgets ):
     # same action in all cases from AttributesWidgets
     def get_label_attribute_definitions( self ):
         return {
-            "aspect": {
+            "group": {
                 "order": self.next_index(),
-                "tooltip": "How is the object oriented with respect to it's face",
-                "default": "back",
+                "tooltip": "group",
+                "default": "no",
                 "type": "combo",
                 "choices": [
-                    "front",
-                    "back",
-                    "rear",
-                    "left",
-                    "right",
-                    "top",
-                    "bottom",
-                    "front left",
-                    "front right",
-                    "rear left",
-                    "rear right"
+                    "no",
+                    "yes",
                 ],
                 "action": self.update_label_attributes
             },
-            "quality": {
+            "truncated": {
                 "order": self.next_index(),
-                "tooltip": "What span of the the category's features does this object exhibit",
-                "default": "ok",
+                "tooltip": "truncated",
+                "default": "no",
                 "type": "combo",
                 "choices": [
-                    "bad",
-                    "poor",
-                    "ok",
-                    "good",
-                    "excellent"
+                    "no",
+                    "yes",
                 ],
                 "action": self.update_label_attributes
             },
-            "cardinality": {
-                "order": self.next_index(),
-                "tooltip": "How much of a stereotype, or archetype, of the category does this object represent: 1 - a little, 5 - a lot",
-                "type": "text",
-                "action": self.update_label_attributes
-            },
-            "box-score": {
-                "order": self.next_index(),
-                "default": "",
-                "type": "text",
-                "action": self.update_image_attributes
-            },
-            "class-error": {
-                "order": self.next_index(),
-                "default": "",
-                "type": "text",
-                "action": self.update_image_attributes
-            },
-            "class-error-score": {
-                "order": self.next_index(),
-                "default": "",
-                "type": "text",
-                "action": self.update_image_attributes
-            }
-
         }
